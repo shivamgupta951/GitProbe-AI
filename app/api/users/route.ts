@@ -26,6 +26,6 @@ import { NextRequest, NextResponse } from "next/server";
         }
     } catch (error) {
         console.log("Error:",error);
-        return NextResponse.json({error:"Failed to create new User"},{status: 404});
+        return NextResponse.json({error:"Failed to create new User"},{status: 500});
     }
  }
